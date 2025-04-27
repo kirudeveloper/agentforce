@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>AgentForce - Intelligent AI Agents</title>
@@ -9,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --background-color: #f8fafc;
-            --text-color: #1e293b;
-            --card-background: #ffffff;
+            --primary-color: #3b82f6;
+            --secondary-color: #1d4ed8;
+            --background-color: #0f172a;
+            --text-color: #e2e8f0;
+            --card-background: #1e293b;
+            --card-hover: #334155;
         }
 
         * {
@@ -81,13 +81,15 @@
             background: var(--card-background);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            background-color: var(--card-hover);
         }
 
         .feature-card i {
@@ -114,12 +116,14 @@
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .benefit-item:hover {
             transform: translateY(-3px);
+            background-color: var(--card-hover);
         }
 
         .benefit-item i {
@@ -140,7 +144,8 @@
             padding: 20px;
             background: var(--card-background);
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .step-number {
@@ -220,41 +225,41 @@
     </style>
 </head>
 <body>
-  <header>
+    <header>
         <div class="container">
             <h1>Welcome to AgentForce for Salesforce</h1>
-            <p>Streamline Your Appointment Booking Process with Intelligent AI Assistance</p>
+            <p>24/7 Self-Service Appointment Booking Powered by AI</p>
         </div>
     </header>
 
     <div class="container">
         <div class="section">
             <h2>What is AgentForce?</h2>
-            <p>AgentForce is an intelligent AI-powered scheduling assistant that seamlessly integrates with Salesforce to revolutionize your appointment booking process. It combines advanced AI capabilities with Salesforce's robust platform to provide efficient and automated scheduling solutions.</p>
+            <p>AgentForce is a revolutionary AI-powered scheduling assistant that operates 24/7, enabling patients to book, reschedule, or cancel appointments at their convenience without any human intervention. Seamlessly integrated with Salesforce, it provides a hassle-free booking experience while maintaining efficient practice management.</p>
         </div>
 
         <div class="section">
             <h2>Key Features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Smart Scheduling</h3>
-                    <p>Automatically finds optimal appointment slots based on staff availability and customer preferences.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-sync"></i>
-                    <h3>Real-time Sync</h3>
-                    <p>Seamlessly synchronizes with your Salesforce calendar and customer database in real-time.</p>
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Availability</h3>
+                    <p>Book, reschedule, or cancel appointments any time, day or night, without waiting for office hours.</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-robot"></i>
-                    <h3>AI-Powered Assistant</h3>
-                    <p>Intelligent booking assistant that handles scheduling conflicts and manages appointment changes.</p>
+                    <h3>AI-Powered Booking</h3>
+                    <p>Smart AI assistant handles complex scheduling logic and patient preferences automatically.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-bell"></i>
-                    <h3>Smart Notifications</h3>
-                    <p>Automated reminders and confirmations to reduce no-shows and improve attendance rates.</p>
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Instant Confirmation</h3>
+                    <p>Receive immediate appointment confirmations and digital calendar invites.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>Easy Rescheduling</h3>
+                    <p>Self-service rescheduling with smart conflict resolution and waitlist management.</p>
                 </div>
             </div>
         </div>
@@ -264,23 +269,23 @@
             <div class="steps-container">
                 <div class="step-item">
                     <div class="step-number">1</div>
-                    <div>Connect AgentForce with your Salesforce instance</div>
+                    <div>Patients access the booking portal 24/7</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
-                    <div>Set up your team's availability and booking rules</div>
+                    <div>AI analyzes availability and patient preferences</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
-                    <div>Let AI handle appointment scheduling and management</div>
+                    <div>Instant booking confirmation and reminders</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">4</div>
-                    <div>Automated notifications keep everyone informed</div>
+                    <div>Easy self-service rescheduling if needed</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">5</div>
-                    <div>Track and analyze booking patterns for optimization</div>
+                    <div>Automated follow-ups and feedback collection</div>
                 </div>
             </div>
         </div>
@@ -289,38 +294,38 @@
             <h2>Benefits</h2>
             <div class="benefits-grid">
                 <div class="benefit-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Save Time</h3>
-                    <p>Reduce manual scheduling effort</p>
+                    <i class="fas fa-user-clock"></i>
+                    <h3>24/7 Access</h3>
+                    <p>Book anytime, anywhere</p>
                 </div>
                 <div class="benefit-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Increase Efficiency</h3>
-                    <p>Optimize appointment scheduling</p>
+                    <i class="fas fa-tasks"></i>
+                    <h3>Full Control</h3>
+                    <p>Manage appointments independently</p>
                 </div>
                 <div class="benefit-item">
-                    <i class="fas fa-smile"></i>
-                    <h3>Happy Customers</h3>
-                    <p>Improve booking experience</p>
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Zero Wait Time</h3>
+                    <p>Instant booking process</p>
                 </div>
                 <div class="benefit-item">
-                    <i class="fas fa-analytics"></i>
-                    <h3>Better Insights</h3>
-                    <p>Track booking analytics</p>
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Easy rescheduling options</p>
                 </div>
             </div>
         </div>
 
         <div class="cta-section">
-            <h2 style="color: white;">Ready to Transform Your Appointment Booking Process?</h2>
-            <p>Get started with AgentForce for Salesforce today and experience the future of intelligent scheduling.</p>
-            <a href="#" class="cta-button">Schedule a Demo</a>
+            <h2 style="color: white;">Experience 24/7 Self-Service Appointment Booking</h2>
+            <p>Transform your practice with automated scheduling that never sleeps</p>
+            <a href="#" class="cta-button">Get Started Now</a>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>© 2025 AgentForce - Your Intelligent Scheduling Partner for Salesforce</p>
+            <p>© 2025 AgentForce - Empowering 24/7 Self-Service Healthcare Scheduling</p>
         </div>
     </footer>
   <script type='text/javascript'>
