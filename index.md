@@ -10,6 +10,18 @@
         :root {
             --primary-color: #3b82f6;
             --secondary-color: #1d4ed8;
+            --backg<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>AgentForce - Intelligent AI Agents</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1d4ed8;
             --background-color: #0f172a;
             --text-color: #e2e8f0;
             --card-background: #1e293b;
@@ -23,10 +35,11 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--background-color);
+            letter-spacing: -0.02em;
         }
 
         .container {
